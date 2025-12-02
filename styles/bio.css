@@ -1,0 +1,33 @@
+.bio-section {
+  background-color: var(--secondary-color);
+}
+
+.bio-content {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--primary-color);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.bio-content p {
+  font-size: 1.1rem;
+  color: var(--text-gray);
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.bio-content p:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .bio-content {
+    padding: 40px;
+  }
+
+  .bio-content p {
+    font-size: 1.15rem;
+  }
+}

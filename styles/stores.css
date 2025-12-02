@@ -1,0 +1,59 @@
+.music-stores {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.music-store-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid #ccc;
+  background: #000;
+  color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  font-size: 0.9rem;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.music-store-btn i {
+  font-size: 1rem;
+}
+
+.music-store-btn span.small {
+  font-size: 0.7rem;
+  opacity: 0.8;
+  display: block;
+}
+
+.music-store-btn span.big {
+  font-size: 1rem;
+  font-weight: 600;
+  display: block;
+}
+
+.music-store-btn:hover {
+  background: #111;
+}
+
+@media (min-width: 768px) {
+  .music-stores {
+    flex-direction: row;
+    text-align: left;
+    gap: 2em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .music-stores {
+    max-width: 50vw;
+  }
+}
